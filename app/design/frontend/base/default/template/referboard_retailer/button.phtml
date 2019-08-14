@@ -1,0 +1,11 @@
+
+<?php
+    
+    
+
+$help = Mage::helper('retailer/common');
+    //
+    
+    $_product = Mage::registry('current_product');
+    
+    echo $help->generateReferbutton($_product);

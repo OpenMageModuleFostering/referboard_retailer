@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The root node for Magento module configuration -->
+<config>
+
+    <tabs>
+        <retailer translate="label" module="retailer">
+            <label>Referboard Setting</label>
+            <sort_order>1</sort_order>
+        </retailer>
+    </tabs>
+
+    <sections>
+        <referboard_retailer_options translate="label" module="retailer">
+            <label>Referboard Retailer Settings</label>
+            <tab>retailer</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <section translate="label">
+                    <label>Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <api_key>
+                            <label>API Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>You Referboard API Key</comment>
+                        </api_key>
+
+                        <price_currency>
+                            <label>Currency</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Product Price Currency.</comment>
+                        </price_currency>
+                    </fields>
+
+                </section>
+
+            </groups>
+        </referboard_retailer_options>
+    </sections>
+
+</config>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Referboard_Retailer</name>
+    <version>1.0.3</version>
+    <stability>stable</stability>
+    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPLv2</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Referboard easily enables your audience to refer your products to their friends and followers.</summary>
+    <description>Referboard is an exciting new platform which enables you to generate more website traffic and online sales, by enabling your audience to refer your products to their friends and followers. This Plug-in enables your website to easily integrate with the Referboard platform and get your products online quicker.</description>
+    <notes>Need to clear cache after installation</notes>
+    <authors><author><name>Smion Li</name><user>referboard</user><email>it@referboard.com</email></author></authors>
+    <date>2016-11-18</date>
+    <time>04:56:19</time>
+    <contents><target name="magecommunity"><dir name="Referboard"><dir name="Retailer"><dir name="Block"><file name="Retailer.php" hash="6775302550e225e73d33727fc23e27b4"/><file name="Test.php" hash="e0753df53b74e791cbc8798c48e0964d"/></dir><dir name="Helper"><file name="Common.php" hash="cd22e65096df4b0ead25ceda0de2c956"/><file name="Data.php" hash="9a7ef906b4bf201c3860762a9000c5b7"/></dir><dir name="Model"><file name="Data.php" hash="70606cf5dff6285ffa0c101daf2faff4"/><file name="Observer.php" hash="6d02cf3ac800e67ae52ca0e7aebefbf8"/><dir name="Resource"><dir name="Data"><file name="Collection.php" hash="a11acc493fc110879787f2aa11df7a66"/></dir><file name="Data.php" hash="94a73ffd763ae7dd65a535390b990e5e"/></dir></dir><dir name="etc"><file name="config.xml" hash="eee4c97aa0ac0e7d45450570b5610d40"/><file name="system.xml" hash="76bb8d34728cf59a01088a129383ff49"/></dir><dir name="sql"><dir name="referboard_retailer_setup"><file name="install-1.0.0.php" hash="083c1cef836e9f89e6ef51f8506f88d1"/><file name="install-1.0.3.php" hash="3bbac19d7753e8467a0d1b5bde9dfaa8"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="referboard_retailer.xml" hash="2702f879e86b973e3155240cb7160bc8"/></dir><dir name="template"><dir name="referboard_retailer"><file name="button.phtml" hash="bf7e4095319ba94bb6ecdad308e9901a"/><file name="header.phtml" hash="c5c305526a8f84a5cef2ec1d838b652e"/><file name="index.phtml" hash="9b28e3acf7257f9b1f5edc1da710dfd0"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Referboard_Retailer.xml" hash="ec78502636149704456fb52cbb987f00"/></dir></target><target name="magelib"><dir name="Referboard"><file name="Referboard_Plugin_Class.php" hash="ad2f595f72b354724032947fce6caf1e"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.0</min><max>7.0.0</max></php></required></dependencies>
+</package>

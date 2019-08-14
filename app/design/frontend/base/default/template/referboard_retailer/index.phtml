@@ -1,0 +1,63 @@
+
+<?php
+//	$orderId	=	$this->getOrderId();
+//	if($orderId){
+//		$orders	 	 	=  	Mage::getModel('sales/order')->loadByIncrementId($orderId);
+//		$orderItems  	=  	$orders->getAllVisibleItems();
+//		$storeName		=	Mage::app()->getStore()->getName();
+//		$grandTotal		=	$orders->getData('grand_total');
+//		$shipping		=	$orders->getData('shipping_amount');
+//		$taxAmount		=	$orders->getData('tax_amount');
+//		// Transaction Data
+//		$trans	=	array('id'=>$orderId, 'affiliation'=>$storeName,'revenue'=>$grandTotal, 'shipping'=>$shipping, 'tax'=>$taxAmount);
+//
+//		// List of Items Purchased.
+//		$items	=	array();
+//		foreach($orderItems as $item)
+//		{
+//			$productId		=	$item->getData('product_id');
+//			$name			=	$item->getData('name');
+//			$price			=	$item->getData('price');
+//			$sku			=	$item->getSku();
+//			$qty			=	$item->getQtyOrdered();
+//			$product 		= 	Mage::getModel('catalog/product')->load($productId);
+//			$categories		= 	$product->getCategoryIds();
+//			foreach ($categories as $categoryId) {
+//				$category	=	Mage::getModel('catalog/category')->load($categoryId) ;
+//				$catName	=	$category->getName();
+//			}
+//			$items[]		=	array('sku'=>$sku, 'name'=>$name, 'category'=>$catName, 'price'=>$price, 'quantity'=>$qty);
+//		}
+//	}
+?>
+<?php
+// Function to return the JavaScript representation of a TransactionData object.
+//function getTransactionJs(&$trans) {
+//  return <<<HTML
+//ga('ecommerce:addTransaction', {
+//  'id': '{$trans['id']}',
+//  'affiliation': '{$trans['affiliation']}',
+//  'revenue': '{$trans['revenue']}',
+//  'shipping': '{$trans['shipping']}',
+//  'tax': '{$trans['tax']}'
+//});
+//HTML;
+//}
+//
+//// Function to return the JavaScript representation of an ItemData object.
+//function getItemJs(&$transId, &$item) {
+//  return <<<HTML
+//ga('ecommerce:addItem', {
+//  'id': '$transId',
+//  'name': '{$item['name']}',
+//  'sku': '{$item['sku']}',
+//  'category': '{$item['category']}',
+//  'price': '{$item['price']}',
+//  'quantity': '{$item['quantity']}'
+//});
+//HTML;
+//}
+?>
+123123123123
+<script type="text/javascript"> console.log('load index');</script>
+

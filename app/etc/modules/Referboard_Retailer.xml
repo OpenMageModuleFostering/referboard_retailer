@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Referboard_Retailer>
+
+            <!-- Whether our module is active: true or false -->
+            <active>true</active>
+
+            <!-- Which code pool to use: core, community or local -->
+            <codePool>community</codePool>
+
+        </Referboard_Retailer>
+    </modules>
+
+    <frontend>
+        <models>
+            <refeboard_retailer>
+                <class>Referboard_Retailer_Model</class>
+            </refeboard_retailer>
+        </models>
+
+
+        <!--<events>-->
+            <!--<core_block_abstract_to_html_before>-->
+                <!--<observers>-->
+                    <!--<refeboard_retailer>-->
+                        <!--<type>singletion</type>-->
+                        <!--<class>Referboard_Retailer_Model_Observer</class>-->
+                        <!--<method>addButton</method>-->
+                    <!--</refeboard_retailer>-->
+                <!--</observers>-->
+            <!--</core_block_abstract_to_html_before>-->
+        <!--</events>-->
+    </frontend>
+</config>

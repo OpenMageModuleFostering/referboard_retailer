@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The root node for Magento module configuration -->
+<config>
+
+    <!--
+        The module's node contains basic
+        information about each Magento module
+    -->
+    <modules>
+
+        <!--
+            This must exactly match the namespace and module's folder
+            names, with directory separators replaced by underscores
+        -->
+        <Referboard_Retailer>
+
+            <!-- The version of our module, starting at 0.0.1 -->
+            <version>1.0.3</version>
+
+        </Referboard_Retailer>
+
+    </modules>
+
+
+    <frontend>
+        <layout>
+            <updates>
+                <referboard_retailer>
+                    <file>referboard_retailer.xml</file>
+                </referboard_retailer>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+        <helpers>
+            <retailer>
+                <class>Referboard_Retailer_Helper</class>
+            </retailer>
+        </helpers>
+        <resources>
+            <referboard_retailer_setup>
+                <setup>
+                    <module>Referboard_Retailer</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </referboard_retailer_setup>
+        </resources>
+        <models>
+            <referboard_retailer>
+                <class>Referboard_Retailer_Model</class>
+                <resourceModel>referboard_retailer_resource</resourceModel>
+            </referboard_retailer>
+
+            <referboard_retailer_resource>
+                <class>Referboard_Retailer_Model_Resource</class>
+                <entities>
+                    <data>
+                        <table>referboard_retailer</table>
+                    </data>
+                </entities>
+            </referboard_retailer_resource>
+        </models>
+
+        <!-- end data base setup -->
+
+        <blocks>
+            <referboard_retailer><class>Referboard_Retailer_Block</class></referboard_retailer>
+        </blocks>
+
+        <!-- Defining an event observer -->
+        <events>
+
+            <sales_order_place_after>
+                <!-- Defining an observer for this event -->
+                <observers>
+
+                    <referboard_retailer>
+
+                        <!-- The model to be instantiated -->
+                        <class>referboard_retailer/observer</class>
+
+                        <!-- The method of the class to be called -->
+                        <method>saveOrder</method>
+
+                        <!-- The type of class to instantiate -->
+                        <type>singleton</type>
+
+                    </referboard_retailer>
+
+                </observers>
+
+            </sales_order_place_after>
+
+            <sales_order_invoice_pay>
+                <observers>
+
+                    <referboard_retailer>
+
+                        <!-- The model to be instantiated -->
+                        <class>referboard_retailer/observer</class>
+
+                        <!-- The method of the class to be called -->
+                        <method>sendOrderToReferboard</method>
+
+                        <!-- The type of class to instantiate -->
+                        <type>singleton</type>
+
+                    </referboard_retailer>
+
+                </observers>
+            </sales_order_invoice_pay>
+
+        </events>
+
+    </global>
+
+
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <referboard_retailer_options>
+                                            <title>Referboard Retailer Setting</title>
+                                        </referboard_retailer_options>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+</config>
