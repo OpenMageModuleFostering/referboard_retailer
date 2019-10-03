@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Referboard_Retailer",
+    "name": "OpenMageModuleFostering\/Referboard_Retailer",
     "type": "magento-module",
     "license": "GPLv2",
     "homepage": "",
     "description": "Referboard easily enables your audience to refer your products to their friends and followers.",
     "authors": [
-    {
-        "name": "Smion Li",
-        "email": "it@referboard.com"
-    }
-],
+        {
+            "name": "Smion Li",
+            "email": "it@referboard.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
